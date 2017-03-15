@@ -1,0 +1,21 @@
+{
+  "name": "template.js",
+  "version": "1.0.1",
+  "description": "a template library",
+  "author": "hexson",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hexson/template.git"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development gulp",
+    "build": "cross-env NODE_ENV=production gulp build"
+  },
+  "devDependencies": {
+    "cross-env": "^3.2.4",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.1.2"
+  }
+}
