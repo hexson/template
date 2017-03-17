@@ -2,7 +2,7 @@
 
 前端模板输出引擎，不依赖第三方库，大小仅2.42KB，支持 `if` `else` `each`。
 
-## v1.0.1 <small>(点击下载\(v1.0.0\))[//hexson.win/lib/template/1.0.0/template.min.js]</small>
+## v1.0.1 <small>[点击下载(v1.0.0)](//hexson.win/lib/template/1.0.0/template.min.js)</small>
 
 ### 栗子
 
@@ -91,7 +91,7 @@ id即为模板的id，该方法会在内部自动获取模板内容；data为渲
 
 ##### template.tplSetting.closeIdentify: 引擎解析语法结束标识，默认 `}}`
 
-## v1.0.1 <small>(点击下载\(v1.0.1\))[//hexson.win/lib/template/1.0.1/template.min.js]</small>
+## v1.0.1 <small>[点击下载(v1.0.1)](//hexson.win/lib/template/1.0.1/template.min.js)</small>
 
 新增过滤器输出，解决需要格式化日期输出或者其他定制输出的情况。
 
