@@ -1,4 +1,4 @@
-#template.js
+# template.js
 
 前端模板输出引擎，不依赖第三方库，大小仅2.42KB，支持 `if` `else` `each`。
 
