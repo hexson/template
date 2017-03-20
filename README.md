@@ -2,7 +2,9 @@
 
 前端模板输出引擎，不依赖第三方库，大小仅2.42KB，支持 `if` `else` `each`。
 
-## v1.0.1
+版本 [v1.0.0](#v100) [v1.0.1](#v101)
+
+## v1.0.0
 
 [点击下载](//hexson.win/lib/template/1.0.0/template.min.js)
 
