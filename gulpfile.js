@@ -16,13 +16,11 @@ var isProd = function(){
 
 
 gulp.task('clean', function(cb){
-  var stream = del(['dist/**/*', 'demo/**/*'], cb);
+  var stream = del(['dist/**/*'], cb);
   return stream;
 });
 
 gulp.task('build', ['clean'], function(){
-  gulp.src('src/template.js')
-      .pipe(gulp.dest('dist/'));
   gulp.src('src/template.js')
       .pipe(uglify())
       .pipe(rename({ suffix: '.min' }))
