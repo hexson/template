@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Template Demo</title>
+</head>
+<body>
+  <p>数据：</p>
+  <code id="data"></code>
+  <p>模板代码：</p>
+  <pre><code id="codes"></code></pre>
+  <p>输出到页面：</p>
+  <div id="output"></div>
+</body>
+<script id="tmp" type="text/html">
+  <!-- template start -->
+  <h3>{{ title }}</h3>
+  {{if city}}
+    <p>Now lives in {{city}}</p>
+  {{else}}
+    <p>Where am</p>
+  {{/else}}
+  <ul>
+    <li>Your like:</li>
+    {{each likes}}
+      <li>{{$index + 1}}: {{$value}}</li>
+    {{/each}}
+  </ul>
+  <ul>
+    <li>other:</li>
+    {{each other as k v}}
+      <li>{{k}}: {{v}}</li>
+    {{/each}}
+  </ul>
+  <!-- template end -->
+</script>
+<script src="../dist/template.min.js"></script>
+<script type="text/javascript">
+  var data = {
+    title: 'Hello World!',
+    city: 'Hangzhou Zhejiang',
+    likes: [
+      'read',
+      'music',
+      'games'
+    ],
+    other: {
+      age: 18,
+      color: 'yellow'
+    }
+  };
+  document.getElementById('data').innerHTML = JSON.stringify(data);
+  document.getElementById('codes').innerHTML = template.escapeHTML(document.getElementById('tmp').innerHTML);
+  document.getElementById('output').innerHTML = template('tmp', data);
+</script>
+</html>
